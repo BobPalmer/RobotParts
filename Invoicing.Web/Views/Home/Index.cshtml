@@ -1,0 +1,53 @@
+﻿@using Invoicing.Model
+@using Invoicing.Web.Models
+@{
+    ViewBag.Title = "Index";
+}
+<link href="/Content/HomeIndex.css" rel="stylesheet" type="text/css" />
+<h2>ACME Robot Parts - Invoice Calculator</h2>
+Search for part:
+<input id="partSearch" size="30"/>
+<button id="addRow">Add To Order</button>
+<br/><br/>
+
+<table id="prodTable">
+    <tr>
+        <th width="230">Product</th>
+        <th width="100">Price</th>
+        <th width="70">% Down</th>
+        <th width="80">Discount %</th>
+        <th width="65">Quantity</th>
+    </tr>
+</table>
+<div class="grid_16">
+    <div class="grid_2 orderData">Credit<br />$<input id="credit" size="4"/></div>
+    <div class="grid_2 orderData">Gift Card<br />$<input id="gift" size="4"/></div>
+    <div class="grid_2 orderData">APR<br /><input id="apr" size="3"/>%</div>
+    <div class="grid_2 orderData">Payments<br /><input id="terms" size="4"/></div>
+    <div class="grid_2"><br /><button id="calcpayments">Calculate</button></div>
+</div>
+
+<div class="grid_16">
+    <div class="grid_2 paymentData">Amount Due<br />
+        <span id="payamt" class="paynum"></span>
+    </div>
+    <div class="grid_2 paymentData">Monthly Payment<br />
+        <span id="paymonth" class="paynum"></span>
+    </div>
+    <div class="grid_2 paymentData">Final Payment<br />
+        <span id="payfinal" class="paynum"></span>
+    </div>
+    <div class="grid_2 paymentData">Remaining<br />Gift Card<br />
+        <span id="paygift" class="paynum"></span>
+    </div>
+    <div class="grid_2 paymentData">Remaining<br/>Credit<br />
+        <span id="paycredit" class="paynum"></span>
+    </div>
+</div>
+
+
+
+@section scripts
+{
+    <script src="/Scripts/HomeIndex.js" type="text/javascript"></script> 
+}

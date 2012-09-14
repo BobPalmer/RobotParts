@@ -1,0 +1,46 @@
+﻿table td {
+    text-wrap: none;
+    padding: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #aaa;
+    color: #555;
+
+}
+
+table th {
+    background-color: #888;
+    color: white;
+    padding: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #aaa;
+}
+
+table input {
+    color: #555;
+}
+
+.orderData {
+    text-align: center;
+    border-color: cornflowerblue;
+    background-color: lavender;
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    margin-bottom: 20px;
+}
+
+.paymentData {
+    text-align: center;
+    border-color: lightcoral;
+    background-color: mistyrose;
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    height: 60px;
+}
+
+.paynum {
+    color: maroon;
+}

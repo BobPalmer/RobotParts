@@ -1,0 +1,9 @@
+﻿@model Invoicing.Web.Models.LineItem
+
+    <tr>
+        <td>@Model.Name</td>
+        <td>@String.Format("{0:C}",Model.Price)</td>
+        <td>@String.Format("{0:G29}%",Model.Upfront * 100)</td>
+        <td><input value=@Model.Discount size="3"/>%</td>
+        <td><input value=@Model.Quantity size="3"/></td>
+    </tr>
